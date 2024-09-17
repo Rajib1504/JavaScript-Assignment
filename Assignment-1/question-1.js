@@ -1,5 +1,5 @@
 function calculateTax(income, expenses) {
-  if (income < expenses || expenses < 0 || income < 0) {
+  if (income <= expenses || expenses < 0 || income < 0) {
     return "Invalid Input";
   }
   const totalIcome = income;
@@ -8,5 +8,5 @@ function calculateTax(income, expenses) {
   return tax;
 }
 
-const expencess = calculateTax(10000, 3000);
+const expencess = calculateTax("10000", "3000");
 console.log(expencess);

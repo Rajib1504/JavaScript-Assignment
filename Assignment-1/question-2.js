@@ -6,7 +6,7 @@ function sendNotification(email) {
   const myMail = email.split("@");
   const user = myMail[0];
   const domain = myMail[1];
-  const str = user + " sent you an email form " + domain;
+  const str = user + " sent you an email from " + domain;
   return str;
 }
 

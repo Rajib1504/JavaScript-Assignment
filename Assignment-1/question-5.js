@@ -3,7 +3,7 @@ function waitingTime(waitingTimes, serialNumber) {
     Array.isArray(waitingTimes) === false ||
     (typeof serialNumber !== "number" && serialNumber > waitingTimes.length - 1)
   ) {
-    console.log("Invalid Input");
+    return "Invalid Input";
   } else {
     let sumArray = 0;
     let avg = 0;
